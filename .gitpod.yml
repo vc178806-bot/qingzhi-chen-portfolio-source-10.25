@@ -1,0 +1,9 @@
+tasks:
+  - name: Portfolio website
+    init: corepack enable && pnpm install
+    command: pnpm dev --host 0.0.0.0
+
+ports:
+  - port: 5173
+    onOpen: open-preview
+    visibility: public
